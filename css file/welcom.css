@@ -1,0 +1,115 @@
+#background{
+    min-height: 1050px;
+    width: 100%;
+   
+}
+#top{
+    height: 35px;
+    width: 100%;
+    background:#2cd654;
+   line-height: 35px;
+   padding: 0px 20px 9px 100px;
+   box-sizing: border-box;
+    word-spacing:10px ;
+    
+}
+#menu{
+    height: 65px;
+    width: 100%;
+    background:green;
+   
+}
+#logo{
+    height: 65px;
+    width: 40%;
+    background:white;
+    text-align: center;
+    line-height: 65px;
+    font-size: 40px;
+    float: left;
+}
+#menu1{
+    height: 65px;
+    width: 60%;
+    background:white;
+    float: left;
+    
+}
+#menu1 UL{
+    list-style: none;
+    padding-left: 200px;
+    box-sizing: border-box;
+    
+}
+#menu1 LI{
+    height: 45px;
+    width: 130px;
+  
+    text-align: center ; 
+    display: inline-block; 
+    line-height: 45px;
+    transform: translateY(-5px);
+    color: black;
+    font-size: 20px;
+   
+}
+#menu1 LI:hover{
+    background: #2cd654;  
+    color: white; 
+    transition: all ease 1s;
+    border-radius: 3px;
+}
+
+#slider{
+    height:max-content;
+    width: 100%;
+    background:url(image/must.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card-container {
+    display: flex;
+    gap: 20px; /* Adjust the space between cards */
+    float: right;
+    margin-top: -15%;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .card-info {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  #down{
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    background:#2c7ad6;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+.footer{
+    height: 20px;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+}
