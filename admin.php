@@ -62,10 +62,10 @@ if(isset($_POST['submit'])){ // if user click submit buttone
             </div>
             <div id="menu1">
                 <ul>
-                    <a href="welcome.php"><li>Home</li></a>
+                    <a href="home.php"><li>Home</li></a>
                     <a href="admin.php"><li>Admin Login</li></a>
                     <a href="create.php"><li class>Register</li></a>
-                    <a href=""><li>Login</li></a>
+                    <a href="home.php"><li>Login</li></a>
 
                 </ul>
             </div>   

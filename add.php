@@ -49,10 +49,10 @@ if (isset($_POST['book'])) {
             </div>
             <div id="menu1">
                 <ul>
-                    <a href="admin.php"><li >Home</li></a>
+                    <a href="add.php"><li >Home</li></a>
                     <a href="add.php"><li >Add </li></a>
                     <a href="list.php"><li>list</li></a>
-                    <a href="admin.php"><li >logout</li></a>
+                    <a href="logout.php"><li >logout</li></a>
 
                 </ul>
             </div>   
@@ -65,7 +65,7 @@ if (isset($_POST['book'])) {
    <label for="author">AUTHOR</label>
    <input type="text" name="author" min="0" placeholder="enter the author name"  required><br>
    <label for="text">DISCRIPTION</label>
-   <textarea name="text" id="" cols="30" rows="10"></textarea>
+   <textarea name="text" id="" cols="124" rows="10" class="text"></textarea>
    <label for="image">IMAGE</label>
    <input type="file" name="image" accept="image/png, image/jpg, image/jpeg"  required><br>
 

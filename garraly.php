@@ -25,7 +25,7 @@ session_start();
              <div id="menu1"> 
                 <ul> 
                     <a href="garraly.php"><li >Home</li></a> 
-                    <a href=".php"><li >About</li></a> 
+                    <a href=""><li >About</li></a> 
                     <a href="logout.php"><li>Log out</li></a>
 
                  </ul>
@@ -55,7 +55,7 @@ session_start();
                     echo '<div class="card-back">';
                     echo '<h2>' . $row['name'] . '</h2>';
                     echo '<p>Author: ' . $row['author'] . '</p>';
-                    echo '<p>Author: ' . $row['text'] . '</p>';
+                    echo '<p>Discription: ' . $row['text'] . '</p>';
                     echo '<button class="btn">Learn More</button>';
                     echo '</div>';
                     echo '</div>';

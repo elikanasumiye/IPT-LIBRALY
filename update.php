@@ -1,4 +1,6 @@
 <?php
+include "conn.php";
+
 if(isset($_POST['update'])){
     $update_id = $_POST['update_id'];
     $update_name = $_POST['update_name'];
@@ -19,6 +21,7 @@ if(isset($_POST['update'])){
        header('location:list.php');
     }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +59,33 @@ if(isset($_POST['update'])){
                 </ul>
             </div>   
         </div>
+ <?php
+       if(isset($_GET['edit'])){
+        $edit_id = $_GET['edit'];
+        $edit_query = mysqli_query($conn, "SELECT * FROM `books` WHERE id = $edit_id");
+        if(mysqli_num_rows($edit_query) > 0){
+            while($fetch_edit = mysqli_fetch_assoc($edit_query)){
+       ?>
  <div class="center">
+ <form action="" method="POST" enctype="multipart/form-data">
+    <img src="uploaded_img/<?php echo $fetch_edit['image']; ?>" height="200" alt="Book Image">
+    <input type="hidden" name="update_id" value="<?php echo $fetch_edit['id']; ?>">
+    <input type="text" class="box" required name="update_name" value="<?php echo $fetch_edit['name']; ?>">
+    <input type="text" class="box" required name="update_author" value="<?php echo $fetch_edit['author']; ?>">
+      <textarea name="update_text" id="" cols="124" rows="10" value="<?php echo $fetch_edit['text']; ?>"></textarea>
+    <input type="file" class="box" name="update_image" accept="image/png, image/jpg, image/jpeg">
+    <input type="submit" value="Update Book" name="update" class="btn">
+    <input type="reset" value="Cancel"   >
+</form>
+</div>
+</div>
+<?php
+        }
+     }
+    }
+
+
+?>
 
 </body>
 </html>
