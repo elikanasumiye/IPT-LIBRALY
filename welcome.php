@@ -50,6 +50,11 @@
       <div class="card-info">More info about card 2.</div>
     </div>
   </div>
+  <div class="card">
+      <img src="css file/image/cover.jpg" alt="Image 1">
+      <div class="card-title">Title 1</div>
+      <div class="card-info">More info about card 1.</div>
+    </div>
   <div id="down">
             <h3>Stay Connected</h3>
             <a href="#"  style="text-decoration: none; padding: 10px 12px;color: white; "></a>
